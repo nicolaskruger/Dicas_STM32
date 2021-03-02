@@ -10,6 +10,10 @@
 - [printf](#printf)
 - [scanf](#scanf)
 - [button interrupt](#button-interrupt)
+- [config display](#config-display)
+- [RTOS](#RTOS)
+- [PWM](#PWM)
+- [ADC](#ADC)
 
 ## tipos de entrada
 
