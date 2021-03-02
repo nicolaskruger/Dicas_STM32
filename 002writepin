@@ -1,0 +1,7 @@
+HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+
+GPIOx: porta do pino
+GPIO_Pin: numero do pino
+PinState: estado do pino
+            GPIO_PIN_SET: 1
+            GPIO_PIN_RESET: 0 

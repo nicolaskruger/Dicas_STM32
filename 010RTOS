@@ -1,0 +1,4 @@
+Middleware -> FREERTOS -> interface(CMSIS_V1)
+			-> mutex #cria mutex
+			-> task and queues #cria queues
+			-> conficureparams -> mutex(enable)

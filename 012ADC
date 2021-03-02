@@ -1,0 +1,9 @@
+Analog -> ADC1 IN1
+
+
+//exemplo leitor ad
+int32_t Controller::adRead(ADC_HandleTypeDef* hadc){
+	HAL_ADC_Start(hadc);
+	while(HAL_ADC_PollForConversion(hadc, 5)!= HAL_OK){}
+	return HAL_ADC_GetValue(hadc);
+}

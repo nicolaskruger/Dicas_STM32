@@ -1,0 +1,4 @@
+HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
+
+GPIOx: porta do pino
+GPIO_Pin: numero do pino

@@ -1,0 +1,24 @@
+para setar o timer:
+
+sys core ->NVIC-> tm<number> .... [checked]
+Pinout & Configuration
+
+Timer->TIM<number>->NVIC Settings->TIM<number> global interrupt [checked]
+
+veja a freqeuncia do clock
+Clock Configuration:
+clk
+
+Timer->TIM<number>->Paramter Settings
+
+prescale : numero que ira dividir o clk
+
+counter period: quanto vai contar até disparar o clk
+
+defina o prescale e counter period.
+
+Em um clk de 2MHz caso queiramos um periode de chama de interrupção
+de 1s
+pode mos definis um percale de 2k, isso resutaris em um clk de 1kHz
+com um periodo de 1ms para termos um periodo de 1 s devemos contar 1k vezes
+assim teremos um counter period de 1000.

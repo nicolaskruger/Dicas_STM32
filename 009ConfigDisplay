@@ -1,0 +1,18 @@
+System Core -> SYS -> debug (serial wire) , timebase Source (TIM 1 || SysTick)
+
+Connectivity -> SPI1 -> Mode(transmit Only Master), Hardware Nss(disabel)
+	      	|
+	      	->Parameter Settings -> Prescale (16)
+Pinout view -> PA0(output) => LCD_RST
+	    -> PA3(output) => LCD_CE
+	    -> PA4(output) => LCD_DC
+# colar drivers na parta do projeto
+
+./Core/Inc/file.h
+./Core/Src/file.c
+
+#main.c
+#include "file.h"
+
+LCD_Init();
+	    

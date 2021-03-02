@@ -1,0 +1,9 @@
+pino no mode GPIO_EXIT
+
+System core -> NVIC -> EXIT... [checked]
+
+implementar a função:
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	...
+}

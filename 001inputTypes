@@ -1,0 +1,12 @@
+tipos de entrada:
+
+pullup : não prescisa de resistores estado padrão 1, gnd para 0
+pulldown : não prescisa de resistores estado padrão 0, vin para 1 vin ≃ 3,3V maior q isso queima a placa
+no -pull : precisa de resistores down w up dependem da comfiguração
+ o vin
+ |          
+  ]push
+ |------pin
+[ ]
+ |
+ gnd

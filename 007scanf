@@ -1,0 +1,24 @@
+para emplementar o scanf
+
+int __io_getchar(void)
+{
+	uint8_t ch = 0;
+	// Clear the Overrun flag just before receiving the first character
+	__HAL_UART_CLEAR_OREFLAG(&huart2);
+
+	HAL_UART_Receive(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+	//HAL_UART_Transmit(&huart3, (uint8_t *)&ch, 1, 0xFFFF);
+	return ch;
+}
+
+int _read(int file, char *ptr, int len)
+ {
+ 	int DataIdx;
+
+ 	for (DataIdx = 0; DataIdx < len; DataIdx++)
+ 	{
+ 	  *ptr++ = __io_getchar();
+ 	}
+
+    return len;
+ }

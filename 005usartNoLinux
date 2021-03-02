@@ -1,0 +1,26 @@
+para configurar a usart basta configurar os pinos 
+PA2 e PA3 para o modo usart
+
+connectivity -> USART2 
+
+definir um baud rate 115200 Bits/s
+word length 8Bits
+
+
+para transmitir:
+
+HAL_UART_Transmit(&huart2,"<palavra>" ,tamnanho, tempo de espera);
+
+HAL_UART_Receive(&huart2,c,1,1000);
+                         | |   |->tempo
+                         | |-> tamnanho
+                         |-> variavel
+
+
+para acessar o terminal:
+
+intalar minicom:
+sudo apt-get install minicom
+
+lançar o terminal:
+minicom -D /dev/ttyACM0 
